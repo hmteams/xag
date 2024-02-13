@@ -21,9 +21,9 @@ An explanation of your solution to the problem
 
 Specification of the structure of the pattern
 
-## Psuedocode
+## Pseudocode
 
-Psuedocode example of the pattern in use
+Pseudocode example of the pattern in use
 
 ## Applicability
 
