@@ -15,7 +15,7 @@ Describe what the pattern does and its purpose.
 
 ## Structure
 
-## Psuedocode
+## Pseudocode
 
 ## Applicability
 
