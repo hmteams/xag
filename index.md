@@ -5,7 +5,7 @@ title: Patterns
 
 <h1>{{ page.title }}</h1>
 
-<p>Welcome to our collection of TRIQPAN design patterns. These patterns are a community-driven effort to share knowledge and practices for designing explainable agent systems.</p>
+<p>This repository contains design patterns for explainable agents as advocated in the ...(link blue sky paper). These patterns are a community-driven effort to share knowledge and practices for designing explainable agent systems.</p>
 
 <ul>
   {% for pattern in site.patterns %}

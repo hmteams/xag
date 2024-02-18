@@ -24,12 +24,7 @@ TriQPAN structures the steps of a decision-making process following the Sense-De
 '''Action''' step executes one or more actions in response to the trigger. Actions in this pattern should be interpreted as operations the agent is able to do in a broader sense. They can be internal (e.g. update beliefs ) or external (e.g., write to a file, move towards a location).<p>
 '''Notify''' ends the TriQPAN process and is twofold. First, all actions
 must notify of any effective change of state (e.g., belief up-
-dates). Second, the TriQPAN should fire an event that informs
-of all the components used. We term this event the XAgent-
-Process event . (See Figure 5 for an example.) Note that the
-notifications of one TriQPAN can be the trigger of another
-TriQPAN , for chained decision processes (See Figure 3 for
-an example).
+dates). Second, the TriQPAN should fire an event that informs of all the components used. We term this event the XAgent-Process event . Note that the notifications of one TriQPAN can be the trigger of another TriQPAN , for chained decision processes
 
 ## Pseudocode
 
