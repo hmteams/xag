@@ -3,7 +3,9 @@ layout: default
 title: Patterns
 ---
 
-<h1>{{ page.title }}</h1>
+<h1>Overview</h1>
+
+<h1>Patterns</h1>
 
 <p>This repository contains design patterns for explainable agents as advocated in the ...(link blue sky paper). These patterns are a community-driven effort to share knowledge and practices for designing explainable agent systems.</p>
 
@@ -15,7 +17,10 @@ title: Patterns
   {% endfor %}
 </ul>
 
-<h2>How to Contribute</h2>
+<h1>Explainable events</h1>
+...
+
+<h1>How to Contribute</h1>
 <p>We welcome contributions from the community! If you have a design pattern that you'd like to share, please follow these steps:</p>
 
 <ol>
