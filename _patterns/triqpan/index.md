@@ -18,13 +18,13 @@ Explaining the decision process of event-driven systems.
 TriQPAN structures the steps of a decision-making process following the Sense-Deliberate-Act loop. Once the decision process has been triggered (e.g. by a perception), it will query its state or known information (e.g., its belief sets), compute or process this information to select the actions to perform, and finally, notify of its actions and completion to other modules of the agent. This observation and the steps are at the core of the TriQPAN pattern. All the components of the decision-making process are documented in the XAgentProcess event that is emitted when the process completes.
 
 ## Structure
-'''Trigger''' are instances of events that begin a TriQPAN process. Perceptions are the most typical triggers of behaviours for most agent types, though they can take different forms depending on the specific architecture used for the agent. If the agent is using a goal-oriented architecture, events such as Goal Adopted, Goal Activated or Belief Updated, are candidates triggers.<p>
-'''Query''' step retrieves information from the agent’s mental state. This can be as simple as data structures (e.g., variables) or as complex as querying an ontology knowledge base.<p>
-'''Process''' step queries the data and the trigger to select the appro- priate actions to take (if any).<p>
-'''Action''' step executes one or more actions in response to the trigger. Actions in this pattern should be interpreted as operations the agent is able to do in a broader sense. They can be internal (e.g. update beliefs ) or external (e.g., write to a file, move towards a location).<p>
-'''Notify''' ends the TriQPAN process and is twofold. First, all actions
+<p><b>Trigger</b> are instances of events that begin a TriQPAN process. Perceptions are the most typical triggers of behaviours for most agent types, though they can take different forms depending on the specific architecture used for the agent. If the agent is using a goal-oriented architecture, events such as Goal Adopted, Goal Activated or Belief Updated, are candidates triggers.</p>
+<p><b>Query</b> step retrieves information from the agent’s mental state. This can be as simple as data structures (e.g., variables) or as complex as querying an ontology knowledge base.</p>
+<p><b>Process</b> step queries the data and the trigger to select the appro- priate actions to take (if any).</p>
+<p><b>Action</b> step executes one or more actions in response to the trigger. Actions in this pattern should be interpreted as operations the agent is able to do in a broader sense. They can be internal (e.g. update beliefs ) or external (e.g., write to a file, move towards a location).</p>
+<p><b>Notify</b> ends the TriQPAN process and is twofold. First, all actions
 must notify of any effective change of state (e.g., belief up-
-dates). Second, the TriQPAN should fire an event that informs of all the components used. We term this event the XAgent-Process event . Note that the notifications of one TriQPAN can be the trigger of another TriQPAN , for chained decision processes
+dates). Second, the TriQPAN should fire an event that informs of all the components used. We term this event the XAgent-Process event . Note that the notifications of one TriQPAN can be the trigger of another TriQPAN , for chained decision processes</p>
 
 ## Pseudocode
 

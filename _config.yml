@@ -21,7 +21,7 @@
 title: Explainable Agent Patterns (XAG)
 email: sebastian.rodriguez@rmit.edu.au
 description: >- # this means to ignore newlines until "baseurl:"
-  Explainable Agent Patterns are a ...
+  Explainable Agent Patterns are a 
 baseurl: "/xag" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
