@@ -13,7 +13,7 @@ The intent of TriQPAN is to record the decision processes of the agent in order 
 Explaining the decision process of event-driven systems.
 
 ## Solution
-![triqpan](/patterns/triqpan/triqpan.png)
+![triqpan](/xag/patterns/triqpan/triqpan.png)
 
 TriQPAN structures the steps of a decision-making process following the Sense-Deliberate-Act loop. Once the decision process has been triggered (e.g. by a perception), it will query its state or known information (e.g., its belief sets), compute or process this information to select the actions to perform, and finally, notify of its actions and completion to other modules of the agent. This observation and the steps are at the core of the TriQPAN pattern. All the components of the decision-making process are documented in the XAgentProcess event that is emitted when the process completes.
 
