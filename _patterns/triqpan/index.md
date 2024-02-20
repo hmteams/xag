@@ -14,7 +14,7 @@ Explaining the decision process of event-driven systems.
 
 ## Solution
 ![triqpan](/xag/patterns/triqpan/triqpan.png)
-
+	
 TriQPAN structures the steps of a decision-making process following the Sense-Deliberate-Act loop. Once the decision process has been triggered (e.g. by a perception), it will query its state or known information (e.g., its belief sets), compute or process this information to select the actions to perform, and finally, notify of its actions and completion to other modules of the agent. This observation and the steps are at the core of the TriQPAN pattern. All the components of the decision-making process are documented in the XAgentProcess event that is emitted when the process completes.
 
 ## Structure
@@ -34,9 +34,10 @@ TriQPAN is applicable for event driven systems; this isn't limited to goal-drive
 ## How to implement
 To implement TriQPAN two elements are required.
 
-First, a system that commits all events to an event logger, such as our ... (link here)
+First, a system that commits all events to an event logger, such as our <a href="https://github.com/hmteams/sarl-eventstoredb-connector" target="_blank">sarl-eventstoredb-connector</a>
 
-Second, the code must be designed so that all state changes are done via events, such as our ... (link here)
+Second, the code must be designed so that all state changes are done via events. This involves stucturing all information as beliefs; an example of this can be seen in our <a href="https://github.com/srodriguez/aamas2024-triqpan-examples/blob/main/src/main/sarl/io/github/hmteams/aamas24/coffee/coffee-beliefs.sarl" target="_blank">coffee example</a>
+
 
 ## Pros and cons
 ### Pros
