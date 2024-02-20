@@ -12,7 +12,7 @@ title: Patterns
 <ul>
   {% for pattern in site.patterns %}
     <li>
-      <a href="{{ pattern.url }}">{{ pattern.title }}</a>
+      <a href="/xag{{ pattern.url }}">{{ pattern.title }}</a>
     </li>
   {% endfor %}
 </ul>
