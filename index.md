@@ -12,18 +12,18 @@ title: Patterns
 <ul>
   {% for pattern in site.patterns %}
     <li>
-       <a href="{{ site.baseurl }}/pattern{{ pattern.url }}">{{ pattern.title }}</a>
+       <a href="{{ site.baseurl }}{{ pattern.url }}">{{ pattern.title }}</a>
     </li>
   {% endfor %}
 </ul>
 
 <h1>Explainable events</h1>
-<p>The follow are sample streams for each of the design patterns.</p>
+<p>The following contain sample streams for the named design patterns.</p>
 
 <ul>
   {% for stream in site.streams %}
     <li>
-       <a href="{{ site.baseurl }}/stream{{ stream.url }}">{{ stream.title }}</a>
+       <a href="{{ site.baseurl }}{{ stream.url }}">{{ stream.title }}</a>
     </li>
   {% endfor %}
 </ul>
