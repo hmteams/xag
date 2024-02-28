@@ -12,7 +12,7 @@ title: Patterns
 <ul>
   {% for pattern in site.patterns %}
     <li>
-       <a href="{{ site.baseurl }}{{ pattern.url }}">{{ pattern.title }}</a>
+       <a href="{{ site.baseurl }}/pattern{{ pattern.url }}">{{ pattern.title }}</a>
     </li>
   {% endfor %}
 </ul>
@@ -23,7 +23,7 @@ title: Patterns
 <ul>
   {% for stream in site.streams %}
     <li>
-       <a href="{{ site.baseurl }}{{ stream.url }}">{{ stream.title }}</a>
+       <a href="{{ site.baseurl }}/stream{{ stream.url }}">{{ stream.title }}</a>
     </li>
   {% endfor %}
 </ul>

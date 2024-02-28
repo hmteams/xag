@@ -1,7 +1,7 @@
 ---
 layout: default
 title: TriQPAN
-permalink: triqpan/
+permalink: pattern/triqpan/
 ---
 
 # TriQPAN (Trigger, Query, Process, Action, Notification)
