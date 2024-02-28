@@ -37,6 +37,9 @@ collections:
   patterns:
     output: true
     permalink: /patterns/:path/
+  streams:
+    output: true
+    permalink: /streams/:path/
 
 
 # Exclude from processing.

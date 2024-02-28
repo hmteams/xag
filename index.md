@@ -18,7 +18,16 @@ title: Patterns
 </ul>
 
 <h1>Explainable events</h1>
-...
+<p>The follow are sample streams for each of the deisng patterns.</p>
+
+<ul>
+  {% for stream in site.streams %}
+    <li>
+       <a href="{{ site.baseurl }}{{ stream.url }}">{{ stream.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 
 <h1>How to Contribute</h1>
 <p>We welcome contributions from the community! If you have a design pattern that you'd like to share, please follow these steps:</p>

@@ -29,18 +29,27 @@ dates). Second, the TriQPAN should fire an event that informs of all the compone
 ## Pseudocode
 
 ## Applicability
-TriQPAN is applicable for event driven systems; this isn't limited to goal-driven event driven systems, although it was initially designed with those in mind.
+<p>Like any design pattern, TriQPAN must be adapted to the specific agent process it is applied to. We highlight some important considerations when adapting it:</p>
+<ul>
+	<li>Each TriQPAN must fire a XAgentProcess event that contains all relevant information about the TriQPAN components (i.e., trigger, queries and outputs, actions applied).</li>
+	<li>Every action should fire an event that notifies other modules of effective state changes. For instance, when updating a belief a Belief Updated event should be fired. If actions do not directly affect the agent’s state (e.g. actions that affect the external environment only), changes will be captured later by the agent as perceptions as the environment changes.</li>
+	<li>A TriQPAN must not contain Action-Query loops. Any process required as a response to an action a should be modelled as a separate TriQPAN using the notification of a’s TriQPAN as the trigger.</li>
+	<li>A TriQPAN must be stateless. That is, it can only depend on the information contained in the trigger and the queries made. This stateless feature also means that, given the same trigger and the same query results, the process must apply the same actions ensuring reproducibility. Furthermore, if the XAgentProcess event is correctly constructed, every TriQPAN can be reproduced and verified against its XAgentProcess event . This feature is a result of TriQPAN ’s foundations and inspiration on well-established event-driven patterns such as Event Sourcing and CQRS.</li>
+</ul>
 
 ## How to implement
-To implement TriQPAN two elements are required.
+<p>To implement TriQPAN the following is required</p>
 
-First, a system that commits all events to an event logger, such as our <a href="https://github.com/hmteams/sarl-eventstoredb-connector" target="_blank">sarl-eventstoredb-connector</a>
-
-Second, the code must be designed so that all state changes are done via events. This involves stucturing all information as beliefs; an example of this can be seen in our <a href="https://github.com/srodriguez/aamas2024-triqpan-examples/blob/main/src/main/sarl/io/github/hmteams/aamas24/coffee/coffee-beliefs.sarl" target="_blank">coffee example</a>
+<ul>
+	<li>A event-stream database, such as EventStoreDB.</li>
+	<li>A language that supports event-driven and goal-driven activity, such as SARL when the goal engine module is added</li>
+	<li>A system that commits all events to an event logger, such as our <a href="https://github.com/hmteams/sarl-eventstoredb-connector" target="_blank">sarl-eventstoredb-connector</a></li>
+	<li>Code designed so that all state changes are done via events. This involves stucturing all information as beliefs; an example of this can be seen in our <a href="https://github.com/srodriguez/aamas2024-triqpan-examples/blob/main/src/main/sarl/io/github/hmteams/aamas24/coffee/coffee-beliefs.sarl" target="_blank">coffee example</a></li>
 
 
 ## Pros and cons
 ### Pros
+<p>TriQPAN allows developers to implements an agent system as per usual, with minimal overhead and being able to query the agent systems for information about its behaviours. Further, this enables requirements verification, and may be possible to extend further to enable <i>live</i> requirements verification.</p>
 
 ### Cons
 
