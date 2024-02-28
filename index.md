@@ -18,7 +18,7 @@ title: Patterns
 </ul>
 
 <h1>Explainable events</h1>
-<p>The follow are sample streams for each of the deisng patterns.</p>
+<p>The follow are sample streams for each of the design patterns.</p>
 
 <ul>
   {% for stream in site.streams %}
