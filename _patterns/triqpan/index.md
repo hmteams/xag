@@ -39,13 +39,12 @@ dates). Second, the TriQPAN should fire an event that informs of all the compone
 
 ## How to implement
 <p>To implement TriQPAN the following is required</p>
-
 <ul>
 	<li>A event-stream database, such as EventStoreDB.</li>
 	<li>A language that supports event-driven and goal-driven activity, such as SARL when the goal engine module is added</li>
 	<li>A system that commits all events to an event logger, such as our <a href="https://github.com/hmteams/sarl-eventstoredb-connector" target="_blank">sarl-eventstoredb-connector</a></li>
 	<li>Code designed so that all state changes are done via events. This involves stucturing all information as beliefs; an example of this can be seen in our <a href="https://github.com/srodriguez/aamas2024-triqpan-examples/blob/main/src/main/sarl/io/github/hmteams/aamas24/coffee/coffee-beliefs.sarl" target="_blank">coffee example</a></li>
-
+</ul>
 
 ## Pros and cons
 ### Pros
