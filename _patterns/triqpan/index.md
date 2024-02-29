@@ -9,6 +9,10 @@ permalink: pattern/triqpan/
 ## Intent
 The intent of TriQPAN is to record the decision processes of the agent in order to allow the user to query the system and recieve explanations of why the agent made a specific decision.
 
+Cite:
+> Rodriguez, S., Thangarajah, J. and Davey, A. (2024) ‘Design Patterns for Explainable Agents (XAg)’, in Proceedings of the 2024 International Conference on Autonomous Agents and Multiagent Systems. Auckland, New Zeland (AAMAS ’24), p. [to appear].
+
+
 ## Problem
 Explaining the decision process of event-driven systems.
 
