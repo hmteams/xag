@@ -7,9 +7,11 @@ title: Patterns
 
 This repository contains design patterns for explainable agents as advocated in the [_Explainable Agents (XAg) by Design_ AAMAS'24 Blue Sky](https://www.aamas2024-conference.auckland.ac.nz/accepted/blue-sky-ideas/){:target="_blank"}.
 
-
-
 These patterns are a community-driven effort to share knowledge and practices for explainable-by-design agents.
+
+Cite this work:
+>  Rodriguez, S. and Thangarajah, J. (2024) ‘Explainable Agents (XAg) by Design’, in Proceedings of the 2024 International Conference on Autonomous Agents and Multiagent Systems (Blue Sky). Auckland, New Zeland (AAMAS ’24), p. [to appear].
+
 
 # Patterns
 
