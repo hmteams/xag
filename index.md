@@ -3,11 +3,15 @@ layout: default
 title: Patterns
 ---
 
-<h1>Overview</h1>
+# Overview
 
-<h1>Patterns</h1>
+This repository contains design patterns for explainable agents as advocated in the [_Explainable Agents (XAg) by Design_ AAMAS'24 Blue Sky](https://www.aamas2024-conference.auckland.ac.nz/accepted/blue-sky-ideas/){:target="_blank"}.
 
-<p>This repository contains design patterns for explainable agents as advocated in the ...(link blue sky paper). These patterns are a community-driven effort to share knowledge and practices for designing explainable agent systems.</p>
+
+
+These patterns are a community-driven effort to share knowledge and practices for explainable-by-design agents.
+
+# Patterns
 
 <ul>
   {% for pattern in site.patterns %}
@@ -17,8 +21,9 @@ title: Patterns
   {% endfor %}
 </ul>
 
-<h1>Explainable events</h1>
-<p>The following contain sample streams for the named design patterns.</p>
+# Explainable events
+
+The following contain sample streams for the named design patterns.
 
 <ul>
   {% for stream in site.streams %}
@@ -28,9 +33,9 @@ title: Patterns
   {% endfor %}
 </ul>
 
+# How to Contribute
 
-<h1>How to Contribute</h1>
-<p>We welcome contributions from the community! If you have a design pattern that you'd like to share, please follow these steps:</p>
+We welcome contributions from the community! If you have a design pattern that you'd like to share, please follow these steps:
 
 <ol>
   <li><strong>Fork the repository:</strong> Begin by forking the <a href="https://github.com/hmteams/xag" target="_blank">XAG repository</a> on GitHub.</li>
