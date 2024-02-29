@@ -53,9 +53,9 @@ Streams are provided for researchers to explore query languages and explanation 
 
 ~~ Instructions to import streams in Event Store ~~
 
-
-### Agents in the City example
-
-### Drone example
-
-### Coffee example
+### Examples
+<ul>
+<li><a href="https://github.com/hmteams/xag/tree/main/_streams/xagprocess/agent_cities_example.tar.gz" target="_blank">Agent cities example</a></li>
+<li><a href="https://github.com/hmteams/xag/tree/main/_streams/xagprocess/coffee_example.tar.gz" target="_blank">Coffee example</a></li>
+<li><a href="https://github.com/hmteams/xag/tree/main/_streams/xagprocess/drone_example.tar.gz" target="_blank">Drone example</a></li>
+</ul>
