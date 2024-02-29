@@ -20,7 +20,7 @@
 
 title: Explainable Agent Patterns (XAG)
 email: sebastian.rodriguez@rmit.edu.au
-description: ""
+description: "Building eXplainable by desing agents... "
 baseurl: "/xag" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
