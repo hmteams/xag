@@ -38,7 +38,7 @@ event XAgentProcess {
 
 ## Version 1: Standard Protobuf
 
-A new version of the XAgProcess event based on [Protobuf](https://protobug.dev) is being develop.
+A new version of the XAgProcess event based on [Protobuf](https://protobuf.dev) is being develop.
 
 Definition and APIs are located in its own repository [XAgProcess Protobuf](https://github.com/hmteams/xagevents)
 
