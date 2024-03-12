@@ -41,7 +41,7 @@ We welcome contributions from the community! If you have a design pattern that y
 
 <ol>
   <li><strong>Fork the repository:</strong> Begin by forking the <a href="https://github.com/hmteams/xag" target="_blank">XAG repository</a> on GitHub.</li>
-  <li><strong>Create your pattern:</strong> Use our <a href="{{ site.baseurl }}TEMPLATE.md" target="_blank">template</a> as a starting point to create your pattern. Add your pattern to the <code>_patterns</code> directory in your fork.</li>
+  <li><strong>Create your pattern:</strong> Use our <a href="{{ site.baseurl }}/template" target="_blank">template</a> as a starting point to create your pattern. Add your pattern to the <code>_patterns</code> directory in your fork.</li>
   <li><strong>Submit a pull request:</strong> Once you're happy with your submission, submit a pull request to the main repository for review.</li>
 </ol>
 
